@@ -1,0 +1,32 @@
+{
+  "name": "feisharp",
+  "displayName": "feisharp",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.98.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "fs",
+      "aliases": ["feisharp", "fs"],
+      "extensions": [".fsc"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "fs",
+      "scopeName": "source.fs",
+      "path": "./syntaxes/fs.tmLanguage.json"
+    }],
+    "themes": [
+      {
+        "label": "Feisharp Color Theme",
+        "uiTheme": "vs-dark",
+        "path": "./themes/fs-color-theme.json"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+    "name": "Feisharp Color Theme",
+    "type": "dark", // or "light"
+    "colors": {
+      // General editor colors (optional)
+      "editor.background": "#1e1e1e",
+      "editor.foreground": "#d4d4d4"
+    },
+    "tokenColors": [
+      {
+        "scope": "keyword.control.feisharp",
+        "settings": {
+          "foreground": "#0000ff" // Blue color for keywords
+        }
+      },
+      {
+        "scope":"storage.text.strings",
+        "settings": {
+          "foreground": "#D69D85",
+        }
+      },
+      {
+        "scope": "support.function.feisharp",
+        "settings": {
+          "foreground": "#DCDCAA" // Light yellow for functions
+        }
+      },
+      {
+        "scope": "storage.type.variable.feisharp",
+        "settings": {
+          "foreground": "#C586C0"
+        }
+      },
+      {
+        "scope": "feisharp.string",
+        "settings": {
+          "foreground": "#ff0000",
+        }
+      }
+    ]
+  }

@@ -1,0 +1,35 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "feisharp",
+	"patterns": [
+		{
+			"match":"\\b(ctype|cstr|astextbox)\\b",
+			"name":"keyword.control.feisharp"
+		},
+		{
+		  "match": "\\b(print|start|append|write|split|contains|fromindex|index|printnl|gethtml|run|append|start|stop|wait|watchstart|watchend|abe|helper|getjson|tojson|read|annotation|anno|readline|readkey)\\b",
+		  "name": "support.function.feisharp"
+		},
+		{
+		  "match": "\\b(var|define|import|functiondef|typedef|set|init|true|false|Double|if|while|return|dowhile)\\b",
+		  "name": "storage.type.variable.feisharp"
+		},
+		{
+			"match": "\".*?\"",
+			"name": "storage.text.strings"
+		}
+	  ],
+	"repository": {
+		"strings": {
+			"name": "string.quoted.double.fs",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "feisharp.string"
+				}
+			]
+		}
+	},
+	"scopeName": "source.fs"
+}
